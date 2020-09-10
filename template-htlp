@@ -1,0 +1,37 @@
+<style>
+	#food_menu_id:nth-child(odd) {
+	background-color: #f3f3f3;}
+	.food_menu_class { border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;}
+	/* .food_menu_class > div {columns: 100px; column-rule-style: solid;} */
+	.food_menu_class-body { column-rule-color: red; columns: 30ch; column-rule-style: solid;} 
+	img:hover: { opacity: 0.5;}
+	.food_menu_class h2 { 
+    columns: 50ch;
+    background-color: lightgray;
+    letter-spacing: 10px;
+    border: 1px solid;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    display: grid;
+    padding: 4px 0;
+} 
+	
+</style>	
+<div id="food_menu_id" class="food_menu_class" style="">
+<div><h2 class="align: center;">{@dish_name}</h2></div>
+	<div class="food_menu_class-body">
+	<img src="http://charlesl8.sg-host.com/wp-content/uploads/2020/09/food_1599582570-scaled.jpeg" >
+	<p>{@dish_description}</p>
+	<div><p>		
+[if food_type  = "Vegetarian"]
+	Vegetarian
+[else]
+	Non Vegetarian
+
+	[/if]
+	</p></div></div>
+
+</div>
+<br>
